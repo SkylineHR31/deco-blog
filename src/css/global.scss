@@ -1,0 +1,109 @@
+// variables
+$primary-text-color: #fff;
+$secondary-text-color: #212121;
+$primary-sub-text-color: #464646;
+$secondary-sub-text-color: #999999;
+$border-color: #3c3c3c;
+
+// fonts from CDN
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+// font-family: 'Montserrat', sans-serif;
+
+.header-btn {
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  width: 62px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  i {
+    width: 23px;
+    height: 23px;
+    color: $primary-text-color;
+    font-size: 23px;
+  }
+}
+
+.logo {
+  background-image: url("../images/img-deco-logo.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 80px;
+  height: 16px;
+
+  &-wrapper {
+    font-family: "Hind", sans-serif;
+    color: $primary-text-color;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 52.2%;
+    transform: translateX(-50%);
+  }
+
+  &-text {
+    text-transform: uppercase;
+    letter-spacing: 4.4px;
+    line-height: 1.34;
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 4px;
+  }
+}
+
+.socials {
+    display: flex;
+    height: 100%;
+
+    &-wrapper {
+        height: 100%;
+        float: right;
+    }
+
+    &-social {
+        border: none;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        height: 100%;
+        width: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-text-color;
+
+        &.rss {
+            width: 54px;
+        }
+
+        &.twitter {
+            width: 54px;
+        }
+
+        &.tumblr {
+            width: 50px;
+        }
+
+        &.facebook {
+            width: 49px;
+
+            i {
+                margin-left: -3px;
+            }
+        }
+
+        &.search {
+            i {
+                font-size: 16px;
+                margin-top: 7px;
+            }
+        }
+
+    }
+}
