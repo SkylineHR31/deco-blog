@@ -30,7 +30,7 @@ $border-color: #3c3c3c;
 }
 
 .logo {
-  background-image: url("../images/img-deco-logo.png");
+  background-image: url("../../dist/6ce38522dc5eb673e943d6cce795ad02.png");
   background-repeat: no-repeat;
   display: inline-block;
   width: 80px;
@@ -106,4 +106,14 @@ $border-color: #3c3c3c;
         }
 
     }
+}
+
+.page-banner {
+  &-outer {
+    background: linear-gradient(0deg, transparent 50%, #212429 50%);
+  }
+
+  &-inner {
+    min-height: 580px;
+  }
 }

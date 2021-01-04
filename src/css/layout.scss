@@ -43,10 +43,12 @@ a {
 
 .content {
     grid-area: content;
+    background-color: #f9f9fb;
 }
 
 .footer {
     &-outer {
         grid-area: footer;
+        background-color: #f9f9fb;
     }
 }
