@@ -59,53 +59,52 @@ $border-color: #3c3c3c;
 }
 
 .socials {
-    display: flex;
+  display: flex;
+  height: 100%;
+
+  &-wrapper {
     height: 100%;
+    float: right;
+  }
 
-    &-wrapper {
-        height: 100%;
-        float: right;
+  &-social {
+    border: none;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    height: 100%;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-text-color;
+
+    &.rss {
+      width: 54px;
     }
 
-    &-social {
-        border: none;
-        border-left: 1px solid $border-color;
-        border-right: 1px solid $border-color;
-        height: 100%;
-        width: 55px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $primary-text-color;
-
-        &.rss {
-            width: 54px;
-        }
-
-        &.twitter {
-            width: 54px;
-        }
-
-        &.tumblr {
-            width: 50px;
-        }
-
-        &.facebook {
-            width: 49px;
-
-            i {
-                margin-left: -3px;
-            }
-        }
-
-        &.search {
-            i {
-                font-size: 16px;
-                margin-top: 7px;
-            }
-        }
-
+    &.twitter {
+      width: 54px;
     }
+
+    &.tumblr {
+      width: 50px;
+    }
+
+    &.facebook {
+      width: 49px;
+
+      i {
+        margin-left: -3px;
+      }
+    }
+
+    &.search {
+      i {
+        font-size: 16px;
+        margin-top: 7px;
+      }
+    }
+  }
 }
 
 .page-banner {
@@ -115,5 +114,53 @@ $border-color: #3c3c3c;
 
   &-inner {
     min-height: 580px;
+    max-height: 580px;
+  }
+
+  &-carousel {
+    &-title {
+      position: relative;
+      color: #fff;
+      padding: 0 97px;
+      max-width: 480px;
+      margin-top: 37px;
+    }
+
+    &-item {
+      position: relative;
+      min-height: 580px;
+      display: flex;
+      align-items: center;
+
+      img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      span {
+        display: inline-block;
+        font-family: "Hind", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 3.6px;
+      }
+
+      h1 {
+        font-family: "Hind", sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: 5.6px;
+        text-transform: uppercase;
+        margin-top: 15px;
+      }
+    }
   }
 }
