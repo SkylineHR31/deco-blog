@@ -1,2 +1,2 @@
 # decoblog.github.io
-First stage of portfolio
+The first stage of the portfolio
